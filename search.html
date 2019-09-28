@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>搜索</title>
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="return" onclick="javascript:history.go(-1);"></div>
+    <div class="search_box">
+        <input class="search_input" type="text">
+        <div class="search_button"></div>
+    </div>
+    <div id="product_list">
+        <div class="null_product" hidden>
+            对不起，您搜索的商品暂时没货，请联系店家告知你所需的商品，店家会加紧备货的~~~~~
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/search.js"></script>
+</html>

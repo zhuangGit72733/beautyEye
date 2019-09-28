@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 0.3rem;
+}
+ul,li {
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration:none;
+}
+@media(min-height:500px){
+    .main{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-height:500px){
+    .main{
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y:scroll;
+    }
+}
+
+.main .banner_list{
+    width: 100%;
+    height: 56%;
+}
+.main .banner_list img{
+    width: 100%;
+    height: 100%;
+}
+.main .product_text{
+    margin-top: 10px;
+    width: 100%;
+    height: 20%;
+    font-size: 0.5rem;
+    font-weight: 400;
+    background: linear-gradient(to right, pink, rgba(255,0,0,0),pink); /* 标准的语法（必须放在最后） */
+    text-indent:35px;
+}
+.main .product_price{
+    width: 100%;
+    margin-top: 10px;
+    height: 10%;
+    color: #D36685;
+    font-size: 0.5rem;
+    text-indent:35px;
+    font-weight: 400;
+
+}
+.main .product_show{
+    width: 100%;
+    margin-top: 10px;
+    text-indent:35px;
+    height: 15%;
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+.main .return{
+    position: fixed;
+    width: 18%;
+    height: 10%;
+    border-radius:50%;
+    background: url("../images/return.jpg") no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
